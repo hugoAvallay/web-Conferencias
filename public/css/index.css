@@ -1,0 +1,224 @@
+/* HEADER */
+
+/* MAIN */
+/*------------------- Cronograma de eventos--------------------- */
+.index__main__section {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.index__main__section h2 {
+    font-size: 1.6em;
+    text-transform: uppercase;
+    margin:0px 50px;
+}
+
+.index__main__section p {
+    margin: 15px 0;
+    margin: 30px 50px;
+}
+
+
+.index__main__section__div-video video{
+    width: 100%;
+}
+
+.index__main__section__contenedor {
+    position: relative;
+}
+.index__main__section__div-eventos {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 30%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.index__main__section__div-eventos h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1em;
+}
+
+.index__main__section__div-eventos img {
+    display: block;
+    width: 15%;
+    margin: 0 auto;
+}
+
+.index__main__section__div-curso-navegacion ul {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 25px 10px 0;
+    font-size: 0.8em;
+
+}
+.index__main__section__div-curso {
+    display: none;
+}/*------------------- Fin de Cronograma de eventos--------------------- */
+
+
+
+
+@media (min-width:448px) {
+/*------------------- Cronograma de eventos--------------------- */
+    .index__main__section__contenedor {
+        position: relative;
+    }
+    .index__main__section__div-eventos {
+        height: 80%;
+        width: 100%;
+        margin-top: 35px;
+    }
+
+    .index__main__section__div-eventos h2 {
+        font-size: 1.2em;
+    }
+
+    .index__main__section__div-curso-navegacion ul {
+        font-size: 0.8em;
+    }
+
+    .index__main__section__div__contenedor-curso {
+        display: flex;
+        justify-content: space-around;
+    }
+    .index__main__section__div-curso {
+        display: block;
+        margin: 15px 0;
+    }
+    
+    .index__main__section__div-curso h3 {
+        margin: 10px 0;
+        font-size: 1em;
+    }
+    .index__main__section__div-curso p {
+        margin: 10px 0;
+        font-size: 0.8em;
+        display: block;
+        margin: 10px;
+    }/*------------------- Fin de Cronograma de eventos--------------------- */
+}
+
+@media (min-width:768px) {
+    /*------------------- Cronograma de eventos--------------------- */
+    .index__main__section__div-eventos {
+        height: 50%;
+        width: 50%;
+        margin-top: 50px;
+        margin-left: 40px;
+    }
+    
+    .index__main__section__div-eventos h2 {
+        text-transform: uppercase;
+        text-align: center;
+    }
+    
+    .index__main__section__div-eventos img {
+        display: block;
+        width: 15%;
+        margin: 0 auto;
+    }
+    
+    .index__main__section__div-curso-navegacion ul {
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 20px 10px 0;
+    
+    }
+    .index__main__section__div-curso {
+        margin: 15px 0;
+    }
+    
+    .index__main__section__div-curso h3, .index__main__section__div-curso p {
+        margin: 10px 0;
+        display: block;
+    }/*------------------- Fin de Cronograma de eventos--------------------- */
+    
+}
+
+@media (min-width:1024px) {
+    /*------------------- Cronograma de eventos--------------------- */
+    .index__main__section__div-eventos {
+        height: 70%;
+
+    }
+
+    .index__main__section h2 {
+        font-size: 2em;
+    }
+
+    .index__main__section__div-eventos h2 {
+        font-size: 2em;
+    }
+
+    .index__main__section__div-curso-navegacion ul {
+        font-size: 1.2em;
+    }
+    .index__main__section__div__contenedor-curso {
+        display: block;
+    }
+
+    .index__main__section__div-curso {
+        margin: 15px 0;
+    }
+    
+    .index__main__section__div-curso h3 {
+        margin: 10px 0;
+        font-size: 1.6em;
+    }
+
+    .index__main__section__div-curso p {
+        font-size: 1em;
+        margin: 20px 0;
+    }/*------------------- Fin de Cronograma de eventos--------------------- */
+
+    .index__main__section-invitado {
+        font-size: 2em;
+        text-align: center;
+        text-transform: uppercase;
+        margin-top: 30px;
+
+    }
+
+    
+    .contenedor-panelistas {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-left: 50px;
+        margin-right: 50px;
+
+
+    }
+
+    .index__main__section-panelista{
+        width: 32.5%;
+        position: relative;
+    }
+    .index__main__section-panelista img {
+        width: 100%;
+        filter: gray;
+        margin-top: 10px;
+        -webkit-filter: grayscale(1);
+        -webkit-transition: all 0.5s ease-in-out;
+    }
+    .index__main__section-panelista:hover img {
+        -webkit-filter: grayscale(0);
+        -webkit-transform: scale(1.07);
+    }
+
+    .index__main__section-panelista p {
+        position: absolute;
+        bottom: 0;
+        background-color: rgba(72, 72, 72, 0.9);
+        width: 100%;
+        padding: 10px 0;
+        color: #fe4918;
+    }
+
+
+}

@@ -1,0 +1,190 @@
+.index__header--backgound {
+    display: flex;
+    flex-direction: column;
+    background-image: url('/img/encabezado.jpg');
+    background-repeat: round;
+    background-size: contain;
+    max-width: 100% 100%;
+    min-height: 180px;
+}
+
+.index__header__redes ul {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 30px;
+}
+
+.index__header__redes ul li a {
+    color: #ffffff;
+}
+
+.index__header__titulo {
+    display: flex;
+    margin: 0 auto;
+    text-align: center; 
+    color: #ffffff;
+    flex-direction: column;
+}
+
+.index__header__titulo-descripcion {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.7em;
+
+}
+
+.index__header__titulo h1 {
+    margin: 0 auto ;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+.index__header__titulo-descripcion i {
+    color: #fe4819;
+}
+
+
+.index__header__titulo-slogan {
+    margin: 0 auto;
+}
+
+.index__header__titulo-slogan span{
+    font-weight: 900;
+}
+
+.index__header__titulo-referencia {
+    text-align: center;
+}
+
+
+
+
+.index__barra__navegacion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #353535;
+    padding: 0 50px;
+}
+
+
+
+.index__barra__navegacion figure{
+    width: 50%;
+}
+.index__barra__navegacion figure img {
+    padding: 20px 0;
+    width: 100%;
+}
+
+.index__barra__navegacion--link{
+    display: none;
+    
+}
+
+
+
+
+
+/* DISPOSITIVO MOVIL/TABLE */
+@media (min-width:448px) {
+    .index__header--backgound {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top center;
+        min-height: 320px;
+    }
+
+    .index__header__titulo-descripcion {
+        font-size: 1em;
+    
+    }
+
+    .index__header__titulo {
+        margin-top: 25px;
+    }
+    
+    .index__header__titulo h1 {
+        font-size: 3em;
+    }
+
+}
+
+
+/* DISPOSITIVO TABLET */
+
+
+
+@media (min-width:768px) {
+    .index__header--backgound {
+        background-position: center;;
+    }
+
+    .index__header__titulo h1 {
+        font-size: 5em;
+        margin: 0 auto ;
+        text-align: center;
+    }
+    
+    .index__header__titulo-descripcion {
+        font-size: 1.2em;
+    }
+
+    .index__header__titulo-slogan  {
+        font-size: 1.5em;
+    }
+
+    .index__barra__navegacion figure{
+        width: 33%;
+    }
+    .index__barra__navegacion figure img {
+        padding: 20px 0;
+        width: 100%;
+    }
+
+    .index__barra__navegacion--link {
+        display: flex;
+        width: 67%;
+        float: right;
+        justify-content: flex-end;
+    }
+    .index__barra__navegacion--link ul {
+        display: flex;
+        gap: 15px;
+        text-transform: uppercase;
+        
+    }
+    
+    .index__barra__navegacion--link ul li a{
+        color: #ffffff;
+        transition: all .6s ease;  /* la durabilidad del efecto definido por :hover */
+    }
+
+    .index__barra__navegacion--link ul li a:hover {/* :hover para agregar efecto de fondo */
+        background-color: #fe4819;
+        padding: 1px 5px;
+    }
+
+    .index__barra__navegacion--link ul li{
+        font-size: 0.9em;
+
+    }
+
+}
+
+
+/* DESCKTOP */
+
+@media (min-width:1024px) {
+    .index__header--backgound {
+        background-position: center;
+        min-height: 650px;
+    }
+
+    .index__barra__navegacion--link ul li{
+        font-size: 1.1em;
+        
+    }
+}
